@@ -43,6 +43,6 @@ export default class HolbertonCourse {
   }
 
   set students(newStudents) {
-    this._students.push(newStudents);
+    this._students = newStudents;
   }
 }
