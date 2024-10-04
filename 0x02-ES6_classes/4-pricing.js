@@ -1,4 +1,4 @@
-/* eslint-disable no-underscore-dangle, no-unused-vars */
+/* eslint-disable no-underscore-dangle */
 
 export default class Pricing {
   constructor(amount, currency) {
