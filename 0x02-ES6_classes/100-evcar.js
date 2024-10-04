@@ -10,7 +10,7 @@ export default class EVCar extends Car {
     return Car;
   }
 
-  static cloneCar() {
+  cloneCar() {
     return new this[Symbol.species]();
   }
 }
