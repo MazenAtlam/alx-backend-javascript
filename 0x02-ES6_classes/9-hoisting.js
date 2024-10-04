@@ -21,15 +21,15 @@ class StudentHolberton {
     this._lastName = lastName;
     this._holbertonClass = holbertonClass;
   }
-  
+
   get fullName() {
     return `${this._firstName} ${this._lastName}`;
   }
-  
+
   get holbertonClass() {
     return this._holbertonClass;
   }
-  
+
   get fullStudentDescription() {
     return `${this.fullName} - ${this.holbertonClass.year} - ${this.holbertonClass.location}`;
   }
