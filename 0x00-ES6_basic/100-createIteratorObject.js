@@ -14,7 +14,7 @@ export default function createIteratorObject(report) {
           if (count < employees.length) {
             const employee = employees[count];
             count += 1;
-            return { count: employee, done: false };
+            return { employee: employee, done: false };
           }
           return { done: true };
         },
