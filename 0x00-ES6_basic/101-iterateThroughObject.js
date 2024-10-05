@@ -1,5 +1,5 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let results = [];
+  const results = [];
   for (const item of reportWithIterator) {
     results.push(item);
   }
