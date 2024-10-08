@@ -8,11 +8,7 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
 
 function addGrade(student, grades) {
   const studentFilteredGrade = grades.filter((grade) => grade.studentId === student.id);
-
-  let grade = 'N/A';
-  if (studentFilteredGrade) {
-    grade = studentFilteredGrade[0];
-  }
+  let grade = studentFilteredGrade.length === 0 ? 'N/A' : studentFilteredGrade[0].grade;
 
   student.grade = grade;
   return student;
