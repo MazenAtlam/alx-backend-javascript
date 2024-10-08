@@ -9,9 +9,8 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
   const results = students
     .filter((student) => student.location === city)
     .map((student) => {
-      Object.defineProperty(student, 'grade', getGrade(student, newGrades));
-      return student;
+      return {...student, 'grade': getGrade(student, newGrades)};
     });
 
-    return results;
+  return results;
 }
