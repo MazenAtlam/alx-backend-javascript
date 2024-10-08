@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   if (startString === '') {
-    return '\n';
+    return '';
   }
   const restStringList = [...set]
     .filter((string) => (string.startsWith(startString)))
