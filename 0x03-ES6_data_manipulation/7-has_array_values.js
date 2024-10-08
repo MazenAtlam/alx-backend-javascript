@@ -1,7 +1,8 @@
 export default function hasValuesFromArray(set, array) {
-  const results = array.filter((element) => !set.has(element));
+  // filter the array from elements that exist in the set
+  const uncommonElements = array.filter((element) => !set.has(element));
 
-  if (results.length === 0) {
+  if (uncommonElements.length === 0) {
     return true;
   }
   return false;
