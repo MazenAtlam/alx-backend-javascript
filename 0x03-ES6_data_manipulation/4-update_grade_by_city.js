@@ -10,9 +10,10 @@ function addGrade(student, grades) {
   const studentFilteredGrade = grades.filter((grade) => grade.studentId === student.id);
 
   let grade = 'N/A';
-  if (studentGrade) {
+  if (studentFilteredGrade) {
     grade = studentFilteredGrade[0];
   }
 
   student.grade = grade;
+  return student;
 }
