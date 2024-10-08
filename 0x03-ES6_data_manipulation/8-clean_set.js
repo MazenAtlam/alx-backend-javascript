@@ -4,10 +4,9 @@ export default function cleanSet(set, startString) {
   }
 
   const restStringList = [...set]
-    .filter((string) => typeof string === 'string' && string.startsWith(startString)) // Check if item is string
-    .map((string) => string.substring(startString.length)) // Extract part after startString
-    .filter(substring => substring); // Remove empty substrings if any
+    .filter((string) => (typeof string === 'string' && string.startsWith(startString)))
+    .map((string) => string.substring(startString.length))
+    .filter((string) => (string)); // filter empty strings
 
-  return restStringList.length ? restStringList.join('-') : ''; // Handle empty result case
+  return restStringList.join('-');
 }
-
