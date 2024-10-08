@@ -8,5 +8,5 @@ export default function cleanSet(set, startString) {
     .map((string) => string.substring(startString.length))
     .filter((string) => (string)); // filter empty strings
 
-  return restStringList.join('-');
+  return (restStringList.length === 0 ? '' : restStringList.join('-'));
 }
